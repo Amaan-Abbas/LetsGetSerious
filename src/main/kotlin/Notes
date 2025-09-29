@@ -1,0 +1,28 @@
+1. Map stores data in sorted order. eg:[1=2, 2=2, 3=1]
+
+2. In Kotlin, List<T> is a read-only data structure. Array<T> is a ds of fixed size, can change the values
+but cannot add or delete the elements. MutableList<T> is the only way to make a resizeable + element mutable.
+
+3. when using .add() or .remove() with a mutable list, it automatically resizes the list.
+
+4. There are two ways to take input in Kotlin: using java.util.Scanner and using readln() or readlnOrNull() {
+java.util.Scanner:
+    Type: Java class (java.util.Scanner) usable in Kotlin.
+
+    Return type: Can directly read different data types (nextInt(), nextDouble(), nextLine(), etc.).
+
+    Speed: Slower than readln() because it does extra parsing and error handling.
+
+    Use case: User-friendly input in small programs, when you want built-in parsing.
+
+readln():
+    Type: Kotlin Standard Library function.
+
+    Return type: Always returns a String.
+
+    Conversion: You must manually convert to other types (toInt(), toDouble(), toIntOrNull(), etc.).
+
+    Speed: Faster than Scanner because it’s a lightweight wrapper over BufferedReader.
+
+    Use case: Competitive programming, quick input handling.
+}
