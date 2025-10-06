@@ -26,3 +26,7 @@ readln():
 
     Use case: Competitive programming, quick input handling.
 }
+
+5. ArrayDeque can be used in order to implement stack in kotlin. It uses a doubly ended queue system
+that allows the input of the values on both the end which helps us in implementing the functions FIFO(Queue)
+and LIFO (Stack).
