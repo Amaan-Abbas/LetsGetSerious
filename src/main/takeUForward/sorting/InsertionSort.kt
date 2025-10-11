@@ -1,4 +1,4 @@
-package takeUforward
+package sorting
 
 fun insertionSort(arr: IntArray) {
     for (i in 1 until arr.size) {

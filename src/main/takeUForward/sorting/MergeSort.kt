@@ -1,4 +1,4 @@
-package takeUforward
+package sorting
 
 fun mergeSort(arr: IntArray, left: Int, right: Int) {
 

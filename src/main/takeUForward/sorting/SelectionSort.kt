@@ -1,4 +1,4 @@
-package takeUforward
+package sorting
 
 fun selectionSort(arr: IntArray) {
     for (i in 0 until arr.size - 1) {

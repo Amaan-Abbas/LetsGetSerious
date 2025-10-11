@@ -1,4 +1,4 @@
-package takeUforward
+package sorting
 
 fun bubbleSort(arr: IntArray) {
     for (i in 0 until arr.size) {
