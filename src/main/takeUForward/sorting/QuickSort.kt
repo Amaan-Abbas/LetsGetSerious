@@ -1,7 +1,7 @@
 package sorting
 
 
-class QuickSort {
+object QuickSort {
 
     fun quickSort(arr: IntArray, left: Int, right: Int) {
         if (left < right) {
@@ -40,10 +40,9 @@ class QuickSort {
 }
 
 fun main() {
-    val obj = QuickSort()
 
     val arr = intArrayOf(2, 1, 1, 6, 7, 3, 1)
-    obj.quickSort(arr, 0, arr.size - 1)
+    QuickSort.quickSort(arr, 0, arr.size - 1)
 
     display(arr)
 }
