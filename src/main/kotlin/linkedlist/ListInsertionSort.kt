@@ -6,11 +6,11 @@ fun insertionSortList(head: ListNode?): ListNode? {
     val fakeHead = ListNode(0) //fake head to serve as a sorted list in the linkedList
     var current = head //current node
     while (current != null) {
-        var preNode = fakeHead //sorted list
+        var preNode: ListNode? = fakeHead //sorted list
         val nextNode = current!!.next //to store the next value in the original list
 
         // condition to find the correct place of all the elements
-        while (preNode!!.next != null && preNode!!.next.`val` <= current!!.`val`) {
+        while (preNode!!.next != null && preNode!!.next!!.`val` <= current!!.`val`) {
             preNode = preNode!!.next
         }
 
