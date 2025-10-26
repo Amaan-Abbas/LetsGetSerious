@@ -20,6 +20,6 @@ fun topKFrequent(nums: IntArray, k: Int): IntArray {
 }
 
 fun main() {
-    val arr = intArrayOf(1,2,1,2,1,2,3,1,3,2)
+    val arr = intArrayOf(4,1,-1,2,-1,2,3)
     println(topKFrequent(arr, 2).contentToString())
 }
