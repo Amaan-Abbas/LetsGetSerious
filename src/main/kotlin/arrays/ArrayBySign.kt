@@ -1,6 +1,8 @@
 package arrays
 
 class ArrayBySign {
+
+    // Using auxiliary space which makes the space complexity as O(n)
     fun rearrangeArray(nums: IntArray): IntArray {
         val n = nums.size
         val posArr =IntArray(n/2)
