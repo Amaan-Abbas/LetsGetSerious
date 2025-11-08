@@ -9,8 +9,8 @@ fun main() {
 
     for (i in 1..input) {
         val size = sc.nextInt()
-        val cubes = sc.next().toCharArray().sorted()
-        val name = sc.next().toCharArray().sorted()
+        val cubes = sc.next().toCharArray().sortedArray()
+        val name = sc.next().toCharArray().sortedArray()
 
         println()
 
