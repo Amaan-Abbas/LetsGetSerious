@@ -35,6 +35,12 @@ public class DoublyLinkedList {
         System.out.println("Node has been inserted!");
     }
 
+//    void insertAtMid(int val, int position) {
+//        doublyNode newNode = new doublyNode(val);
+//
+//        if (h)
+//    }
+
     void deleteAtFront() {
         if (head == null) {
             System.out.println("The list is empty!");
