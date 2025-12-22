@@ -30,3 +30,26 @@ readln():
 5. ArrayDeque can be used in order to implement stack in kotlin. It uses a doubly ended queue system
 that allows the input of the values on both the end which helps us in implementing the functions FIFO(Queue)
 and LIFO (Stack).
+
+
+
+
+
+Coroutines:
+
+A function is a sequence of instructions that take inputs and give us some output.
+
+A thread describes in which order does the this sequence of instructions should be executed. Without multi-threading they are executed
+one after the other and can never be interfered when one is being executed.
+If there are two threads then they will execute their set of code in independently and parallelly, but it does not assures that which thread will end first.\
+
+In android applications, all the tasks are executed in a single thread call the main thread, but this might lead to waiting/resource locking because when one call is
+being executed=, another function call cannot be executed, only after the first is completely executed then only will the other be executed.
+
+Multi-threading is required because of various operations like network call, database operations, complex calculations.
+
+
+NOW,
+1. coroutines are executed inside of a thread, and as many as possible can be executed within a thread.
+2. Coroutines are suspendable .i.e. they can be executed and then paused when needed and then resumes as per the need.
+3. They can easily change their context, that is, they can easily switch from one thread in which they are running to another thread.
