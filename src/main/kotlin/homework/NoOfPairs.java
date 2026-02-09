@@ -4,29 +4,16 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class NoOfPairs {
-    public static int noOfPairs(int n, int l, int r, int[] pairs) {
-        if (n == 1) return 0;
-        if (n == 2) {
-            int sum = pairs[0] + pairs[1];
-            return (sum >= l && sum <= r) ? 1 : 0;
-        }
+    public static int countPairs(Long[] arr, int target) {
+        int start = 0, end = arr.length - 1;
+        int count = 0;
 
-        Arrays.sort(pairs);
-
-        int i = 0, j = n - 1, count = 0;
-
-        while (i < j) {
-            int sum = pairs[i] + pairs[j];
-
-            if (sum >= l && sum <= r) {
-                i++;
-                count++;
-            } else if (sum < l) {
-                i++;
+        while (start < end) {
+            if (arr[start] + arr[end] <= target) {
+                count += (end - start);
+                start++;
             }
-            else {
-                j--;
-            }
+            else end--;
         }
 
         return count;
@@ -35,17 +22,19 @@ public class NoOfPairs {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int test = sc.nextInt();
+        int n = sc.nextInt();
 
-        for (int i = 1; i <= test; i++) {
-            int n = sc.nextInt();
+        for (int i = 1; i <= n; i++) {
+            int m = sc.nextInt();
             int l = sc.nextInt();
             int r = sc.nextInt();
 
-            int[] pairs = new int[n];
-            for (int j = 0; j < n; j++) pairs[j] = sc.nextInt();
+            Long[] nums = new Long[m];
 
-            System.out.println(noOfPairs(n, l, r, pairs));
+            for (int j = 0; j < m; j++) nums[j] = sc.nextLong();
+            Arrays.sort(nums);
+
+            System.out.println(countPairs(nums, r) - countPairs(nums, l - 1));
         }
     }
 }
