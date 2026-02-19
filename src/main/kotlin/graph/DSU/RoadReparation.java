@@ -1,4 +1,4 @@
-//package graph.DSU;
+package graph.DSU;
 
 import java.io.BufferedReader;
 import java.io.IOException;
